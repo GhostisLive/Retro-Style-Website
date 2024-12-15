@@ -1,0 +1,183 @@
+/* General Styles */
+body {
+    font-family: 'Press Start 2P', cursive;
+    background-color: #121212;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #e50914;
+    padding: 30px 20px;
+    text-align: center;
+    border-bottom: 3px solid #fff;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 50px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+nav {
+    background-color: #333;
+    padding: 15px 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 25px;
+    font-size: 18px;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    color: #e50914;
+}
+
+nav .profile-icon {
+    font-size: 24px;
+    margin-left: auto;
+}
+
+/* Container */
+.container {
+    padding: 40px 20px;
+    margin: 0 auto;
+    max-width: 1200px; /* Container width */
+}
+
+/* Profile Card */
+.profile-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+    background-color: #333;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.profile-image {
+    margin-right: 30px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+}
+
+.profile-image img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.profile-info h2 {
+    font-size: 32px;
+    margin: 0;
+    color: #e50914;
+}
+
+.profile-info p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+/* Watchlist Section */
+.watchlist-section {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.watchlist-section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #e50914;
+}
+
+.movie-list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.movie-item {
+    text-align: center;
+    width: 200px;
+}
+
+.movie-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border: 2px solid #fff;
+    border-radius: 10px;
+}
+
+.movie-item p {
+    font-size: 16px;
+    padding-top: 10px;
+    color: #fff;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+    color: #bbb;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsive Styles */
+
+/* Tablet Devices (<= 768px) */
+@media (max-width: 768px) {
+    .profile-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-info {
+        margin-top: 20px;
+    }
+
+    nav {
+        padding: 10px 0;
+    }
+
+    nav a {
+        font-size: 16px;
+    }
+}
+
+/* Mobile Devices (<= 480px) */
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 40px;
+    }
+
+    .profile-info h2 {
+        font-size: 24px;
+    }
+
+    .profile-info p {
+        font-size: 16px;
+    }
+
+    .movie-item {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
