@@ -1,0 +1,178 @@
+/* General Styles */
+body {
+    font-family: 'Press Start 2P', cursive;
+    background-color: #121212;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #e50914;
+    padding: 30px 20px;
+    text-align: center;
+    border-bottom: 3px solid #fff;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 50px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+nav {
+    background-color: #333;
+    padding: 15px 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 25px;
+    font-size: 18px;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    color: #e50914;
+}
+
+nav .profile-icon {
+    font-size: 24px;
+    margin-left: auto;
+}
+
+/* Container Styles */
+.container {
+    padding: 40px 20px;
+    margin: 0 auto;
+    max-width: 1200px; /* Ensure maximum container width */
+}
+
+/* Movie Section */
+.movie-section {
+    margin-bottom: 60px;
+}
+
+.movie-section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #e50914;
+}
+
+/* Movie List */
+.movie-list {
+    display: flex;
+    flex-wrap: wrap;  /* Allow the list to wrap on smaller screens */
+    justify-content: space-between;  /* Adjust spacing between items */
+    gap: 25px;
+    padding-bottom: 15px;
+}
+
+/* Movie Item */
+.movie-item {
+    text-align: center;
+    width: 200px;  /* Set a default width for the movie items */
+    flex-shrink: 0;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #333;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.movie-item img {
+    width: 100%;
+    height: 300px;  /* Fix height for consistent image aspect ratio */
+    object-fit: cover;
+    border: 2px solid #fff;
+    border-radius: 5px;
+}
+
+.movie-item p {
+    font-size: 16px;
+    padding: 10px;
+    margin: 0;
+    background-color: #000;
+    color: #fff;
+    text-transform: capitalize;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border-top: 2px solid #fff;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover Effects */
+.movie-item:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.movie-item:hover p {
+    background-color: #e50914;
+}
+
+/* Watchlist Styles */
+.watchlist {
+    background-color: #222;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+footer {
+    background-color: #333;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+    color: #bbb;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Media Queries for Responsive Design */
+
+/* Tablet Devices (<= 768px) */
+@media (max-width: 768px) {
+    .movie-item {
+        width: 45%;  /* Allow for two items per row on smaller screens */
+    }
+
+    .movie-section h2 {
+        font-size: 24px;
+    }
+
+    nav {
+        padding: 10px 0;
+    }
+
+    nav a {
+        font-size: 16px;
+    }
+}
+
+/* Mobile Devices (<= 480px) */
+@media (max-width: 480px) {
+    .movie-item {
+        width: 100%;  /* Full width for each item */
+        margin-bottom: 20px;  /* Add spacing between movie items */
+    }
+
+    .movie-section h2 {
+        font-size: 20px;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+    header h1 {
+        font-size: 40px;
+    }
+}
